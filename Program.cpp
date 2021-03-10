@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-//An efficient O(1) approach 
+//An efficient approach 
 
 int main(){
     int n;                                 //Declaring variable N
