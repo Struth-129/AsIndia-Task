@@ -1,0 +1,169 @@
+header{
+    background: url("../images/att.png");
+    text-align: center;
+	width: 100% !important;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+	overflow: hidden;
+    z-index:1;
+    top:0% !important;
+    left:0;
+}
+header .overlay{
+    width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.Death{
+    background: url("../images/dt.png");
+    text-align: center;
+	width: 100% !important;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+	overflow: hidden;
+    z-index:1;
+    top:0% !important;
+    left:0;
+}
+.Death .overlay{
+    width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+.Imm{
+    background: url("../images/Imm.png");
+    text-align: center;
+	width: 100% !important;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+	overflow: hidden;
+    z-index:1;
+    top:0% !important;
+    left:0;
+}
+.Imm .overlay{
+    width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+
+.content-head{
+    top:780px;
+    position: relative;
+    z-index:3;
+    color:white;
+    font-family: 'Stick', sans-serif;
+    font-size: 90px  !important;
+    left:25%;
+    width:60%;
+}
+
+.content-head h1{
+    font-size: 100px !important;
+}
+
+.about{
+    top:820px;
+    position: relative;
+    z-index:3;
+    color:white;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.about p span{
+    color:violet;
+  }
+
+.login-page{
+    background: url("../images/wp.png");
+    filter:blur(2px);
+    text-align: center;
+	width: 100% !important;
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: absolute;
+	overflow: hidden;
+    z-index:1;
+    top:0% !important;
+    left:0;
+}
+.login-page .overlay{
+    width: 100%;
+	height: 100%;
+	padding: 50px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+}
+  
+.login-form{
+    height: 500px;
+    width: 400px;
+    position: absolute;
+    z-index: 3;
+    top: 15%;
+    left:36%;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 5px 5px 5px 5px;
+    /* transform: translate(-50%,-50%); */
+}
+.login-form h2{
+    color: rgb(87, 189, 133);
+    font-family: 'Stick', sans-serif;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.login-form form{
+    padding-left:20px;
+    padding-top:10px
+}
+
+.login-form input{
+    width: calc(100% - 20px);
+    padding: 30px 20px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #2979ff;
+    color: #fff;
+    font-size: 20px;
+}
+.login-form input:focus{
+    border:none;
+    outline: none;
+}
+.login-form input::placeholder{
+    color: #e2e2e2;
+}
+.login-form button{
+    margin-top:60px;
+    margin-left: 110px;
+    width: 40%;
+    height: 50px;
+    padding: 5px 0;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    background-image: linear-gradient(to right, rgb(160, 47, 154) , rgb(80, 49, 131));
+    font-size: 18px;
+    color: #fafafa;
+}
+.login-form button:hover{
+    background-image: linear-gradient(to right, rgb(138, 43, 43) , rgb(120, 161, 43));
+    color:white;
+}
