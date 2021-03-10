@@ -1,8 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '../css/Image.css';
 
-
+var x=""
 const Imm = () =>{
+    const[cmt,setcmt] = useState("");
+    const[cmnt,postt] = useState("");
+    const cmntdis=(event)=>{
+        x = event.target.value
+        setcmt(x)
+    }
+    const postcmnt=()=>{
+        postt("Your Comment : "+x);
+    }
     return (
         <>  
         <div className="Imm">
@@ -26,6 +35,11 @@ const Imm = () =>{
              but it might be too challenging for him to do, because he is so powerful that it is highly possible for him to hide his power. 
              Will Wang Ling enjoy the high school life?
             </p>
+            <br></br><br></br><br></br><br></br>
+            <h2>Comments</h2><br></br><br></br>
+            <input type="text" value={x} placeholder="Enter text here" onChange={cmntdis}></input>
+            <button onClick={postcmnt}> POST </button>
+            <p> {cmnt}</p>
         </div>
         </>
     );

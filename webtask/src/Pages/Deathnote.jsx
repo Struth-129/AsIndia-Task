@@ -1,8 +1,17 @@
-import React from 'react';
+import React,{useState} from 'react';
 import '../css/Image.css';
 
-
+var x=""
 const Deathnote = () =>{
+    const[cmt,setcmt] = useState("");
+    const[cmnt,postt] = useState("");
+    const cmntdis=(event)=>{
+        x = event.target.value
+        setcmt(x)
+    }
+    const postcmnt=()=>{
+        postt("Your Comment : "+x);
+    }
     return (
         <>  
         <div className="Death">
@@ -30,6 +39,11 @@ const Deathnote = () =>{
               of terror. Death Note ran in Shueisha's manga magazine Weekly Shōnen Jump from December 2003 to May 2006. Its 108 chapters were 
               collected in 12 tankōbon volumes
             </p>
+            <br></br><br></br><br></br><br></br>
+            <h2>Comments</h2><br></br><br></br>
+            <input type="text" value={x} placeholder="Enter text here" onChange={cmntdis}></input>
+            <button onClick={postcmnt}> POST </button>
+            <p> {cmnt}</p>
         </div>
         </>
     );

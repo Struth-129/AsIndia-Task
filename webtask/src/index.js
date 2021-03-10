@@ -8,7 +8,7 @@ import Movies from './Pages/Movies';
 import Attack from './Pages/Attack';
 import Deathnote from './Pages/Deathnote';
 import Imm from './Pages/Imm';
-
+import Saitama from './Pages/Saitama';
 ReactDOM.render(
   <>
     <BrowserRouter>
@@ -18,6 +18,7 @@ ReactDOM.render(
           <Route exact path="/Deathnote" component={Deathnote}/>
           <Route exact path="/Imm" component={Imm}/>
           <Route exact path="/Movies" component={Movies}/>
+          <Route exact path="/Saitama" component={Saitama}/>
         </Switch>
     </BrowserRouter>
   </>,

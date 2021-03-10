@@ -1,9 +1,18 @@
-import React from 'react';
+import React,{useState} from 'react';
 import att from '../images/att.png';
 import '../css/Image.css';
 
-
+var x="";
 const Attack = () =>{
+    const[cmt,setcmt] = useState("");
+    const[cmnt,postt] = useState("");
+    const cmntdis=(event)=>{
+        x = event.target.value
+        setcmt(x)
+    }
+    const postcmnt=()=>{
+        postt("Your Comment : "+x);
+    }
     return (
         <>  
         <header>
@@ -34,6 +43,11 @@ const Attack = () =>{
                 worldwide, making it one of the best-selling manga series of all time. It has won several awards, including the Kodansha Manga Award, 
                 the Attilio Micheluzzi Award, and Harvey Award.
             </p>
+            <br></br><br></br><br></br><br></br>
+            <h2>Comments</h2><br></br><br></br>
+            <input type="text" value={x} placeholder="Enter text here" onChange={cmntdis}></input>
+            <button onClick={postcmnt}> POST </button>
+            <p> {cmnt}</p>
         </div>
         </>
     );
